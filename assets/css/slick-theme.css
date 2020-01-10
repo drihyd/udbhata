@@ -14,7 +14,9 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 0;
+    bottom: 0;
+    margin:auto;
 
     display: block;
 
@@ -61,7 +63,7 @@
     font-size: 20px;
     line-height: 1;
 
-    opacity: .75;
+    opacity: 1;
     color: white;
 
     -webkit-font-smoothing: antialiased;
@@ -71,6 +73,7 @@
 .slick-prev
 {
     left: -25px;
+
 }
 [dir='rtl'] .slick-prev
 {
@@ -79,9 +82,12 @@
 }
 .slick-prev:before
 {
-    content: '<';
-    font-size: 60px;
-    font-weight: 600;
+   content:"\f104";
+    font-family: FontAwesome;
+    font-size: 40px;
+    font-weight: 500;
+    color: grey;
+
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -90,7 +96,7 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 0px;
 }
 [dir='rtl'] .slick-next
 {
@@ -99,13 +105,25 @@
 }
 .slick-next:before
 {
-    content: '>';
-    font-size: 60px;
+   content:"\f105 ";
+   font-family: FontAwesome;
+    font-size: 40px;
+    color: grey;
+    font-weight: 500
+}
+.slick-next:hover::before
+{
+    color:#173661 !important;
+}
+.slick-prev:hover::before
+{
+    color:#173661 !important;
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '<';
-    font-size: 60px;
+   content:"\e257 ";
+    font-family: FontAwesome;
+    font-size: 40px;
     font-weight: 600;
 }
 
@@ -118,8 +136,9 @@
 .offering-slick .slick-dots
 {
     position: absolute;
-    right: 0px;
-    top:36%;
+    text-align: center;
+    margin:auto;
+    width:100%;
    
 }
 .testimonal-carousel .slick-dots
@@ -141,7 +160,7 @@
 {
     position: relative;
 
-    display: block;
+    display: inline-block;
 
     width: 20px;
     height: 20px;
@@ -169,6 +188,15 @@
     background: #fff;
     border-radius: 50%;
     opacity: .4
+}
+.daksa-testimonal-slick .slick-dots li button{
+    background: transparent;
+    border: 1px solid #1bb2ca;
+}
+.daksa-testimonal-slick .slick-dots .slick-active button {
+    opacity: 1;
+    background: #173661;
+    border: 1px solid #173661;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
@@ -198,3 +226,13 @@
     opacity:1; 
 }
  
+.offering-slick .slick-dots li button
+{
+    background: transparent;
+   
+    border: 1px solid #1bb2ca;
+}
+.offering-slick .slick-dots .slick-active button {
+    opacity: 1;
+    background: #1BB2C9;
+}

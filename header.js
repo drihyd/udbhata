@@ -18,9 +18,9 @@ function printheader() {
    document.write("   <a href=\"index.html\" class=\" link_1\" >Home<\/a>");
    document.write("   <a href=\"solution.html \" class=\"link_1\">Solutions<\/a>");
    document.write("   <a href=\"qoris.html \" class=\"link_1\">Qoris<\/a>");
-   document.write("  <a href=\"#\">Blog<\/a>");
-   document.write("  <a href=\"index.html#About-us\"  class=\"inner-link aboutt aboutreditect link_1\">About<\/a>");
-   document.write(" <a href=\"#about-contact\" class=\"inner-link link_1\">Contact<\/a>");
+   document.write("  <a href=\"blog.html\">Blog<\/a>");
+  
+   document.write(" <a href=\"#about-contact\" class=\"inner-link link_1 contact_us\">Contact<\/a>");
    document.write(" <label for=\"chk\" class=\"hide-menu-btn\">");
    document.write(" <i class=\"fa fa-times\"><\/i>");
    document.write("   <\/label>");
